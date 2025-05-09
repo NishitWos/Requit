@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@font-face {
+    font-family: 'PP Mori';
+    src: url('/assets/fonts/PPMori-SemiBold.woff2') format('woff2'),
+        url('/assets/fonts/PPMori-SemiBold.woff') format('woff');
+    font-weight: 600;
+}
+body{
+    font-family: "Inter", sans-serif;
+    color: #0A0A0A;
+    line-height: 1.5;
+}
+
+.primary-font{
+    font-family: "Inter", sans-serif;
+}
+.secondary-font{
+    font-family:'PP Mori' ;
+}
+.rear-font{
+    font-family: "DM Sans", sans-serif;
+}
+.dark-text{
+    color: #0A0A0A;
+}
+.secondary-dark-text{
+    color: #0C382F;
+}
+.light-text{
+color: #9A9A9A;
+}
+.secondary-light-text{
+    color: #D6D6D6;
+   
+}
+/* size  14  16 18 20 24  34 36 43 56  67 96 */
+
+/* weight 400  500 600 */
+/* 400  fw-normal.
+500  fw-medium.
+600 fw-semibold. */

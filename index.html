@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Requite</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+
+<body>
+
+  <!-- navigation bar  -->
+  <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+          <a class="navbar-brand" href="#hero">
+            <img class="mr-3" src="./assets/images/logo/headerLogo.png" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-between navbar-links" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link" aria-current="page" href="#digital-tipping">Why Digitise Tipping </a>
+              <a class="nav-link" href="#solution">Solutions</a>
+              <a class="nav-link" href="#contact">Contact Us</a>
+
+            </div>
+            <button id="openSidebar" class="btn-dark book-demo text-2xs fw-medium">Book a Demo</button>
+          </div>
+        </div>
+        </div>
+      </nav>
+  </header>
+  <!-- sidebar  -->
+  <!-- Sidebar -->
+  <div id="sidebar" class="sidebar">
+    <div class="sidebar-content">
+      <div class="sidebar-header d-flex justify-content-between">
+        <h3 class="fw-semibold">Book a Demo</h3> <button id="closeSidebar" class="close-btn"><svg width="24" height="24"
+            viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15 9L9 14.9996M15 15L9 9.00039" stroke="#141B34" stroke-width="1.5" stroke-linecap="round"
+              stroke-linejoin="round" />
+            <path
+              d="M2.5 12C2.5 7.52166 2.5 5.28249 3.89124 3.89124C5.28249 2.5 7.52166 2.5 12 2.5C16.4783 2.5 18.7175 2.5 20.1088 3.89124C21.5 5.28249 21.5 7.52166 21.5 12C21.5 16.4783 21.5 18.7175 20.1088 20.1088C18.7175 21.5 16.4783 21.5 12 21.5C7.52166 21.5 5.28249 21.5 3.89124 20.1088C2.5 18.7175 2.5 16.4783 2.5 12Z"
+              stroke="#141B34" stroke-width="1.5" />
+          </svg>
+
+        </button>
+      </div>
+      <div class="sidebar-form-data">
+        <form class="">
+          <div class="sidebar-form-inputs">
+            <div class="group first-input">
+              <input type="text" required>
+              <span class="highlight"></span>
+              <label>Name</label>
+            </div>
+            <div class="group mail">
+              <input type="text" required>
+              <span class="highlight"></span>
+              <label>Email</label>
+            </div>
+            <div class="group phone">
+              <input type="text" required>
+              <span class="highlight"></span>
+              <label>Phone Number</label>
+            </div>
+            <div class="group company">
+              <input type="text" required>
+              <span class="highlight"></span>
+              <label>Company Name</label>
+            </div>
+            <div class="group additional-comment">
+              <input class="comment" type="text" required>
+              <span class="highlight"></span>
+              <label>Additional Comment </label>
+            </div>
+            <div class="group demo-date">
+              <input class="has-data" type="date" required>
+              <label>Preferred Demo Date </label>
+              <span class="highlight"></span>
+            </div>
+            <div class="group demo-date">
+              <input class="has-data" type="time" required>
+              <label>Timezone </label>
+              <span class="highlight"></span>
+            </div>
+            <div class="group demo-date">
+              <input class="has-data" type="text" required>
+              <label>Product Interest </label>
+              <span class="highlight"></span>
+            </div>
+
+          </div>
+
+        </form>
+       
+      </div>
+    </div>
+    <div class="sidebar-form-control">
+      <p class="form-note fw-normal">We’re excited to help you! Schedule your demo and discover how Requite can
+        elevate your tipping system.</p>
+      <div class="form-buttons d-flex justify-content-between"><button id="canclebar" class="cancle"><svg width="57" height="19"
+            viewBox="0 0 57 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M12.3111 5.16619H10.3168C10.2401 4.74006 10.0973 4.36506 9.88849 4.04119C9.67969 3.71733 9.42401 3.44247 9.12145 3.21662C8.81889 2.99077 8.48011 2.82031 8.10511 2.70526C7.73438 2.5902 7.3402 2.53267 6.92259 2.53267C6.16832 2.53267 5.4929 2.7223 4.89631 3.10156C4.30398 3.48082 3.83523 4.03693 3.49006 4.76989C3.14915 5.50284 2.97869 6.39773 2.97869 7.45455C2.97869 8.51989 3.14915 9.41903 3.49006 10.152C3.83523 10.8849 4.30611 11.4389 4.9027 11.8139C5.49929 12.1889 6.17045 12.3764 6.91619 12.3764C7.32955 12.3764 7.72159 12.321 8.09233 12.2102C8.46733 12.0952 8.80611 11.9268 9.10866 11.7053C9.41122 11.4837 9.6669 11.2131 9.87571 10.8935C10.0888 10.5696 10.2358 10.1989 10.3168 9.78125L12.3111 9.78764C12.2045 10.4311 11.9979 11.0234 11.6911 11.5646C11.3885 12.1016 10.9986 12.5661 10.5213 12.9581C10.0483 13.3459 9.5071 13.6463 8.89773 13.8594C8.28835 14.0724 7.62358 14.179 6.90341 14.179C5.76989 14.179 4.75994 13.9105 3.87358 13.3736C2.98722 12.8324 2.28835 12.0589 1.77699 11.0533C1.26989 10.0476 1.01634 8.84801 1.01634 7.45455C1.01634 6.05682 1.27202 4.85724 1.78338 3.85582C2.29474 2.85014 2.99361 2.07883 3.87997 1.5419C4.76634 1.00071 5.77415 0.730113 6.90341 0.730113C7.59801 0.730113 8.24574 0.830255 8.84659 1.03054C9.4517 1.22656 9.99503 1.51633 10.4766 1.89986C10.9581 2.27912 11.3565 2.74361 11.6719 3.29332C11.9872 3.83878 12.2003 4.46307 12.3111 5.16619ZM16.8784 14.2173C16.2562 14.2173 15.6937 14.1023 15.1909 13.8722C14.688 13.6378 14.2896 13.299 13.9956 12.8558C13.7058 12.4126 13.5609 11.8693 13.5609 11.2259C13.5609 10.6719 13.6674 10.2159 13.8805 9.85795C14.0936 9.5 14.3812 9.21662 14.7434 9.00781C15.1056 8.79901 15.5105 8.64134 15.9579 8.5348C16.4054 8.42827 16.8613 8.3473 17.3258 8.2919C17.9139 8.22372 18.3912 8.16832 18.7576 8.12571C19.1241 8.07884 19.3904 8.00426 19.5566 7.90199C19.7228 7.79972 19.8059 7.63352 19.8059 7.40341V7.35866C19.8059 6.80043 19.6483 6.3679 19.3329 6.06108C19.0218 5.75426 18.5574 5.60085 17.9395 5.60085C17.296 5.60085 16.7889 5.74361 16.4181 6.02912C16.0517 6.31037 15.7981 6.62358 15.6575 6.96875L13.8613 6.55966C14.0744 5.96307 14.3855 5.48153 14.7946 5.11506C15.2079 4.74432 15.6831 4.47585 16.22 4.30966C16.7569 4.1392 17.3216 4.05398 17.9139 4.05398C18.3059 4.05398 18.7214 4.10085 19.1603 4.1946C19.6035 4.28409 20.0169 4.45028 20.4004 4.69318C20.7882 4.93608 21.1056 5.28338 21.3528 5.73509C21.6 6.18253 21.7235 6.7642 21.7235 7.48011V14H19.8571V12.6577H19.7804C19.6568 12.9048 19.4714 13.1477 19.2243 13.3864C18.9771 13.625 18.6596 13.8232 18.2718 13.9808C17.8841 14.1385 17.4196 14.2173 16.8784 14.2173ZM17.2939 12.6832C17.8223 12.6832 18.274 12.5788 18.649 12.37C19.0282 12.1612 19.3159 11.8885 19.5119 11.5518C19.7122 11.2109 19.8123 10.8466 19.8123 10.4588V9.19318C19.7441 9.26136 19.612 9.32528 19.416 9.38494C19.2243 9.44034 19.0048 9.48935 18.7576 9.53196C18.5105 9.57031 18.2697 9.60653 18.0353 9.64062C17.801 9.67045 17.6049 9.69602 17.4473 9.71733C17.0765 9.7642 16.7377 9.84304 16.4309 9.95384C16.1284 10.0646 15.8855 10.2244 15.7022 10.4332C15.5233 10.6378 15.4338 10.9105 15.4338 11.2514C15.4338 11.7244 15.6085 12.0824 15.9579 12.3253C16.3074 12.5639 16.7527 12.6832 17.2939 12.6832ZM25.6804 8.17045V14H23.7692V4.18182H25.6037V5.77983H25.7251C25.951 5.25994 26.3047 4.84233 26.7862 4.52699C27.272 4.21165 27.8835 4.05398 28.6207 4.05398C29.2898 4.05398 29.8757 4.1946 30.3786 4.47585C30.8814 4.75284 31.2713 5.16619 31.5483 5.71591C31.8253 6.26562 31.9638 6.94531 31.9638 7.75497V14H30.0526V7.98509C30.0526 7.27344 29.8672 6.71733 29.4964 6.31676C29.1257 5.91193 28.6165 5.70952 27.9688 5.70952C27.5256 5.70952 27.1314 5.8054 26.7862 5.99716C26.4453 6.18892 26.1747 6.47017 25.9744 6.84091C25.7784 7.20739 25.6804 7.65057 25.6804 8.17045ZM38.1626 14.1982C37.2124 14.1982 36.3942 13.983 35.7081 13.5526C35.0263 13.1179 34.5021 12.5192 34.1357 11.7564C33.7692 10.9936 33.5859 10.12 33.5859 9.13565C33.5859 8.13849 33.7734 7.25852 34.1484 6.49574C34.5234 5.72869 35.0518 5.12997 35.7337 4.69957C36.4155 4.26918 37.2188 4.05398 38.1435 4.05398C38.8892 4.05398 39.554 4.19247 40.1378 4.46946C40.7216 4.74219 41.1925 5.12571 41.5504 5.62003C41.9126 6.11435 42.1278 6.69176 42.196 7.35227H40.3359C40.2337 6.89205 39.9993 6.49574 39.6328 6.16335C39.2706 5.83097 38.7848 5.66477 38.1754 5.66477C37.6428 5.66477 37.1761 5.8054 36.7756 6.08665C36.3793 6.36364 36.0703 6.75994 35.8487 7.27557C35.6271 7.78693 35.5163 8.39205 35.5163 9.09091C35.5163 9.80682 35.625 10.4247 35.8423 10.9446C36.0597 11.4645 36.3665 11.8672 36.7628 12.1527C37.1634 12.4382 37.6342 12.581 38.1754 12.581C38.5376 12.581 38.8658 12.5149 39.1598 12.3828C39.4581 12.2464 39.7074 12.0526 39.9077 11.8011C40.1122 11.5497 40.255 11.2472 40.3359 10.8935H42.196C42.1278 11.5284 41.9212 12.0952 41.576 12.5938C41.2308 13.0923 40.7685 13.4844 40.1889 13.7699C39.6136 14.0554 38.9382 14.1982 38.1626 14.1982ZM47.9714 14.1982C47.0041 14.1982 46.171 13.9915 45.4721 13.5781C44.7775 13.1605 44.2406 12.5746 43.8613 11.8203C43.4863 11.0618 43.2988 10.1733 43.2988 9.15483C43.2988 8.14915 43.4863 7.26278 43.8613 6.49574C44.2406 5.72869 44.769 5.12997 45.4466 4.69957C46.1284 4.26918 46.9252 4.05398 47.8372 4.05398C48.3912 4.05398 48.9281 4.1456 49.448 4.32884C49.9679 4.51207 50.4345 4.79972 50.8478 5.19176C51.2612 5.58381 51.5872 6.09304 51.8258 6.71946C52.0645 7.34162 52.1838 8.09801 52.1838 8.98864V9.66619H44.3791V8.23438H50.3109C50.3109 7.73153 50.2086 7.28622 50.0041 6.89844C49.7995 6.50639 49.5119 6.19744 49.1412 5.97159C48.7747 5.74574 48.3443 5.63281 47.85 5.63281C47.313 5.63281 46.8443 5.76491 46.4437 6.02912C46.0474 6.28906 45.7406 6.62997 45.5233 7.05185C45.3102 7.46946 45.2037 7.9233 45.2037 8.41335V9.53196C45.2037 10.1882 45.3187 10.7464 45.5488 11.2067C45.7832 11.6669 46.1092 12.0185 46.5268 12.2614C46.9444 12.5 47.4324 12.6193 47.9906 12.6193C48.3528 12.6193 48.6831 12.5682 48.9814 12.4659C49.2797 12.3594 49.5375 12.2017 49.7548 11.9929C49.9721 11.7841 50.1383 11.5263 50.2534 11.2195L52.0623 11.5455C51.9174 12.0781 51.6575 12.5447 51.2825 12.9453C50.9118 13.3416 50.4451 13.6506 49.8826 13.8722C49.3244 14.0895 48.6873 14.1982 47.9714 14.1982ZM55.7156 0.909091V14H53.8043V0.909091H55.7156Z"
+              fill="#0A0A0A" />
+            <path d="M0 17.5795H57.0004V18.8068H0V17.5795Z" fill="#0A0A0A" />
+          </svg>
+        </button>
+        <button class="schedule"><svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M11.92 13.9463H16.92M8.92004 13.9463H8.92902M13.92 17.9463H8.92004M16.92 17.9463H16.911"
+              stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M18.92 2.94629V4.94629M6.92004 2.94629V4.94629" stroke="#141B34" stroke-width="1.5"
+              stroke-linecap="round" stroke-linejoin="round" />
+            <path
+              d="M3.42004 13.1895C3.42004 8.83223 3.42004 6.65357 4.67216 5.29993C5.92428 3.94629 7.93953 3.94629 11.97 3.94629H13.87C17.9005 3.94629 19.9158 3.94629 21.1679 5.29993C22.42 6.65357 22.42 8.83223 22.42 13.1895V13.7031C22.42 18.0604 22.42 20.239 21.1679 21.5927C19.9158 22.9463 17.9005 22.9463 13.87 22.9463H11.97C7.93953 22.9463 5.92428 22.9463 4.67216 21.5927C3.42004 20.239 3.42004 18.0604 3.42004 13.7031V13.1895Z"
+              stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M3.92004 8.94629H21.92" stroke="#141B34" stroke-width="1.5" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+          Schedule My Demo</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- empower your earning section  -->
+
+  <section id="hero" class="empower-earning text-center ">
+
+   
+    <img src="./assets/images/EmpowerEarning/Vector.png" class="vector intereact-less" alt="vector">
+    <img class="stars star-first intereact-less" src="./assets/images/EmpowerEarning/Star 1.png" alt="">
+    <img class="stars star-second  intereact-less" src="./assets/images/EmpowerEarning/Star 2.png" alt="">
+    <img class="stars star-third intereact-less " src="./assets/images/EmpowerEarning/Star 3.png" alt="">
+    <div class="container">
+      <div class="empowe-earning">
+        <span class="empower-label fw-medium"><span class="p-1 me-1">New</span>We’ve enhanced digital tipping
+          options</span>
+        <h1 class="title fw-semibold secondary-font">Empower Your <br> Earnings with <br> Tap 'n' Tip!</h1>
+        <p class="empower-detail fw-medium">Revolutionising Digital Tipping for <br> Hospitality Professionals
+        </p>
+
+        <img class="empower-images img-chino" src="./assets/images/EmpowerEarning/Drive Sucess 2.png" alt="">
+        <img class="empower-images img-andre" src="./assets/images/EmpowerEarning/Enhance Satisfaction.png" alt="">
+        <img class="empower-images img-logan" src="./assets/images/EmpowerEarning/andra.png" alt="">
+        <img class="empower-images img-sofia" src="./assets/images/EmpowerEarning/drive.png" alt="">
+        <div class="empower-button d-flex gap-3 justify-content-center align-items-center">
+          <button class="btn btn-dark fw-medium"><svg width="9" height="9" viewBox="0 0 9 9" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <rect x="0.68399" y="0.169678" width="8" height="8" rx="4" fill="#CBF36E" />
+            </svg>
+            Get a free quote</button>
+          <button class="btn btn-light"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M7.15825 3.71223L6.7556 2.80625C6.49232 2.21388 6.36068 1.91768 6.1638 1.69101C5.91707 1.40694 5.59547 1.19794 5.23567 1.08785C4.94858 1 4.62446 1 3.97621 1C3.02791 1 2.55375 1 2.15573 1.18229C1.68687 1.39702 1.26343 1.86328 1.09473 2.3506C0.951511 2.76429 0.992531 3.18943 1.07458 4.0397C1.94791 13.0902 6.90981 18.0521 15.9603 18.9254C16.8106 19.0075 17.2357 19.0485 17.6494 18.9053C18.1367 18.7366 18.603 18.3131 18.8177 17.8443C19 17.4462 19 16.9721 19 16.0238C19 15.3755 19 15.0514 18.9122 14.7643C18.8021 14.4045 18.5931 14.0829 18.309 13.8362C18.0823 13.6393 17.7861 13.5077 17.1937 13.2444L16.2878 12.8417C15.6462 12.5566 15.3255 12.4141 14.9995 12.3831C14.6876 12.3534 14.3731 12.3972 14.0811 12.5109C13.776 12.6297 13.5063 12.8544 12.967 13.3038C12.4301 13.7512 12.1617 13.9749 11.8337 14.0947C11.543 14.2009 11.1586 14.2403 10.8523 14.1951C10.5069 14.1442 10.2423 14.0029 9.7133 13.7201C8.0672 12.8405 7.15953 11.9328 6.27986 10.2867C5.99714 9.7577 5.85578 9.4931 5.80487 9.1477C5.75974 8.8414 5.79908 8.457 5.9053 8.1663C6.02512 7.83828 6.24881 7.56986 6.69619 7.033C7.14562 6.49368 7.37034 6.22402 7.48915 5.91891C7.60285 5.62694 7.64661 5.3124 7.61694 5.00048C7.58594 4.67452 7.44338 4.35376 7.15825 3.71223Z"
+                stroke="#141B34" stroke-width="1.5" stroke-linecap="round" />
+            </svg>
+            Book an intro call</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Adapting to the Cashless Future is Essential section  -->
+
+  <section class="adapting-cashless-feature section-padding ">
+    <div class="container">
+      <div class="adapting-outer position-relative d-flex w-100">
+        <div class="w-50">
+          <div class="adapting-left ">
+            <p class="adapting-que fw-medium">Why This is Critical Now</p>
+            <h2 class="adapting-title secondary-font fw-semibold">Adapting to the Cashless  Future is Essential</h2>
+            <p class="adapting-text">Our goal is to enhance customer experiences and  improve earnings for
+              hospitality professionals.</p>
+            <div class="adapting-buttons d-flex gap-3">
+              <button class="btn btn-dark fw-medium"><svg width="9" height="9" viewBox="0 0 9 9" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <rect x="0.68399" y="0.169678" width="8" height="8" rx="4" fill="#CBF36E" />
+                </svg>
+                Get a free quote</button>
+              <button class="btn btn-light"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7.15825 3.71223L6.7556 2.80625C6.49232 2.21388 6.36068 1.91768 6.1638 1.69101C5.91707 1.40694 5.59547 1.19794 5.23567 1.08785C4.94858 1 4.62446 1 3.97621 1C3.02791 1 2.55375 1 2.15573 1.18229C1.68687 1.39702 1.26343 1.86328 1.09473 2.3506C0.951511 2.76429 0.992531 3.18943 1.07458 4.0397C1.94791 13.0902 6.90981 18.0521 15.9603 18.9254C16.8106 19.0075 17.2357 19.0485 17.6494 18.9053C18.1367 18.7366 18.603 18.3131 18.8177 17.8443C19 17.4462 19 16.9721 19 16.0238C19 15.3755 19 15.0514 18.9122 14.7643C18.8021 14.4045 18.5931 14.0829 18.309 13.8362C18.0823 13.6393 17.7861 13.5077 17.1937 13.2444L16.2878 12.8417C15.6462 12.5566 15.3255 12.4141 14.9995 12.3831C14.6876 12.3534 14.3731 12.3972 14.0811 12.5109C13.776 12.6297 13.5063 12.8544 12.967 13.3038C12.4301 13.7512 12.1617 13.9749 11.8337 14.0947C11.543 14.2009 11.1586 14.2403 10.8523 14.1951C10.5069 14.1442 10.2423 14.0029 9.7133 13.7201C8.0672 12.8405 7.15953 11.9328 6.27986 10.2867C5.99714 9.7577 5.85578 9.4931 5.80487 9.1477C5.75974 8.8414 5.79908 8.457 5.9053 8.1663C6.02512 7.83828 6.24881 7.56986 6.69619 7.033C7.14562 6.49368 7.37034 6.22402 7.48915 5.91891C7.60285 5.62694 7.64661 5.3124 7.61694 5.00048C7.58594 4.67452 7.44338 4.35376 7.15825 3.71223Z"
+                    stroke="#141B34" stroke-width="1.5" stroke-linecap="round" />
+                </svg>
+                Book an intro call</button>
+            </div>
+          </div>
+        </div>
+        <div class="adapting-right w-50 ">
+          <div class="adapting-cards w-100 d-flex flex-column  align-items-center">
+            <div class="card cashless-card ">
+              <img src="./assets/images/adaptingCashlessFeature/digital-payment.png" width="555" class="card-img-top"
+                alt="...">
+              <div class="card-body">
+                <h5 class="card-title secondary-font fw-semibold ">Digital Payment Shift</h5>
+                <p class="card-text fw-medium">70% of all payments are now cashless, making digital tipping an essential
+                  adaptation for sustaining service professionals' income.
+                </p>
+
+              </div>
+            </div>
+            <div class="card cashless-card">
+              <img src="./assets/images/adaptingCashlessFeature/support.png" width="555" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title secondary-font fw-semibold ">Support for Low-Wage Workers</h5>
+                <p class="card-text fw-medium">Over 80% of hospitality workers rely on tips to make up more than 50% of
+                  their total income. Without efficient digital solutions, they miss out on potential earnings.
+                </p>
+
+              </div>
+            </div>
+            <div class="card cashless-card">
+              <img src="./assets/images/adaptingCashlessFeature/customer-experience.png" width="555"
+                class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title secondary-font fw-semibold ">Improving Customer Experience</h5>
+                <p class="card-text fw-medium">A seamless digital tipping experience increases customer satisfaction by
+                  25% and encourages repeat business.
+                </p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Requite Elevates Digital Tipping. section ----------------------------- -->
+  <section id="digital-tipping" class="requite-elevates section-padding">
+    <div class="container">
+      <h2 class="title-secondary fw-semibold secondary-font text-center">
+        Requite Elevates <br> Digital Tipping.
+      </h2>
+      <div class="elevate-cai">
+        <p class="elevates-detail text-center fw-light ">Customized, Affordable, Insight-Driven</p>
+      </div>
+      <div class="elevate-card-stick">
+        <div class="elevates-cards w-100">
+          <div class="elevate-card-wrapper w-100 d-flex justify-content-center flex-wrap">
+            <div class="card w-50 text-center tip-card">
+              <div class="card-body">
+                <svg width="602" height="290" viewBox="0 0 602 290" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M510.451 7.24799C545.494 8.1839 576.519 30.1436 589.053 62.8816L662.886 255.743L721.436 453.782C731.375 487.399 720.077 523.692 692.814 545.728L532.207 675.546L361.954 792.427C333.054 812.267 295.047 812.738 265.664 793.619L92.5697 680.989L-71.2018 555.187C-99.0016 533.832 -111.194 497.83 -102.091 463.978L-48.4624 264.551L20.5743 69.9196C32.2931 36.8814 62.7655 14.1603 97.7741 12.3572L304.013 1.73451L510.451 7.24799Z" stroke="url(#paint0_linear_862_726)" stroke-width="2.87208"/>
+                  <defs>
+                  <linearGradient id="paint0_linear_862_726" x1="109.327" y1="281.961" x2="454.284" y2="-89.983" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#666666"/>
+                  <stop offset="1" stop-opacity="0"/>
+                  </linearGradient>
+                  </defs>
+                  </svg>
+                  <svg class="svg-secondstar" width="602" height="204" viewBox="0 0 602 204" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M450.935 5.33541C485.977 6.27132 517.003 28.2311 529.536 60.969L581.704 197.237L623.072 337.163C633.011 370.779 621.713 407.072 594.451 429.109L480.972 520.833L360.679 603.416C331.779 623.256 293.771 623.727 264.389 604.608L142.088 525.028L26.3736 436.142C-1.42628 414.787 -13.6189 378.785 -4.51557 344.933L33.3761 204.026L82.1545 66.5078C93.8733 33.4696 124.346 10.7485 159.354 8.94534L305.074 1.43983L450.935 5.33541Z" stroke="url(#paint0_linear_862_727)" stroke-width="2.87208"/>
+                    <defs>
+                    <linearGradient id="paint0_linear_862_727" x1="153.913" y1="134.948" x2="56.527" y2="42.2554" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#666666"/>
+                    <stop offset="1" stop-opacity="0"/>
+                    </linearGradient>
+                    </defs>
+                    </svg>
+                    
+                <h5 class="card-title fw-medium">Predetermined Tip Amounts</h5>
+                <h6 class="card-subtitle  text-body-secondary fw-normal">Requite offers customizable but predefined
+                  tipping options, eliminating "tipflation" and guilt tipping, ensuring customers feel comfortable and
+                  employees receive fair tips.
+                </h6>
+              </div>
+              <div class="tip-img w-100">
+                <img class="tip-img" src="./assets/images/elevates/tip-amount.png" alt="" width="50%">
+              </div>
+            </div>
+            <div class="card w-50 text-center tip-card" >
+              <div class="card-body">
+                <svg width="602" height="290" viewBox="0 0 602 290" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M510.451 7.24799C545.494 8.1839 576.519 30.1436 589.053 62.8816L662.886 255.743L721.436 453.782C731.375 487.399 720.077 523.692 692.814 545.728L532.207 675.546L361.954 792.427C333.054 812.267 295.047 812.738 265.664 793.619L92.5697 680.989L-71.2018 555.187C-99.0016 533.832 -111.194 497.83 -102.091 463.978L-48.4624 264.551L20.5743 69.9196C32.2931 36.8814 62.7655 14.1603 97.7741 12.3572L304.013 1.73451L510.451 7.24799Z" stroke="url(#paint0_linear_862_726)" stroke-width="2.87208"/>
+                  <defs>
+                  <linearGradient id="paint0_linear_862_726" x1="109.327" y1="281.961" x2="454.284" y2="-89.983" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#666666"/>
+                  <stop offset="1" stop-opacity="0"/>
+                  </linearGradient>
+                  </defs>
+                  </svg>
+                  <svg class="svg-secondstar" width="602" height="204" viewBox="0 0 602 204" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M450.935 5.33541C485.977 6.27132 517.003 28.2311 529.536 60.969L581.704 197.237L623.072 337.163C633.011 370.779 621.713 407.072 594.451 429.109L480.972 520.833L360.679 603.416C331.779 623.256 293.771 623.727 264.389 604.608L142.088 525.028L26.3736 436.142C-1.42628 414.787 -13.6189 378.785 -4.51557 344.933L33.3761 204.026L82.1545 66.5078C93.8733 33.4696 124.346 10.7485 159.354 8.94534L305.074 1.43983L450.935 5.33541Z" stroke="url(#paint0_linear_862_727)" stroke-width="2.87208"/>
+                    <defs>
+                    <linearGradient id="paint0_linear_862_727" x1="153.913" y1="134.948" x2="56.527" y2="42.2554" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#666666"/>
+                    <stop offset="1" stop-opacity="0"/>
+                    </linearGradient>
+                    </defs>
+                    </svg>
+                <h5 class="card-title fw-medium">Instantaneous Transactions</h5>
+                <h6 class="card-subtitle  text-body-secondary fw-normal">Tipping through Requite is fast and
+                  efficient, processing tips within seconds with a single card insertion or swipe, minimizing wait times
+                  and hassle for both customers and service professionals.</h6>
+              </div>
+              <img src="./assets/images/elevates/transaction.png" alt="">
+            </div>
+            <div class="card w-50 text-center tip-card" >
+              <div class="card-body">
+                <svg width="602" height="290" viewBox="0 0 602 290" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M510.451 7.24799C545.494 8.1839 576.519 30.1436 589.053 62.8816L662.886 255.743L721.436 453.782C731.375 487.399 720.077 523.692 692.814 545.728L532.207 675.546L361.954 792.427C333.054 812.267 295.047 812.738 265.664 793.619L92.5697 680.989L-71.2018 555.187C-99.0016 533.832 -111.194 497.83 -102.091 463.978L-48.4624 264.551L20.5743 69.9196C32.2931 36.8814 62.7655 14.1603 97.7741 12.3572L304.013 1.73451L510.451 7.24799Z" stroke="url(#paint0_linear_862_726)" stroke-width="2.87208"/>
+                  <defs>
+                  <linearGradient id="paint0_linear_862_726" x1="109.327" y1="281.961" x2="454.284" y2="-89.983" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#666666"/>
+                  <stop offset="1" stop-opacity="0"/>
+                  </linearGradient>
+                  </defs>
+                  </svg>
+                  <svg class="svg-secondstar" width="602" height="204" viewBox="0 0 602 204" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M450.935 5.33541C485.977 6.27132 517.003 28.2311 529.536 60.969L581.704 197.237L623.072 337.163C633.011 370.779 621.713 407.072 594.451 429.109L480.972 520.833L360.679 603.416C331.779 623.256 293.771 623.727 264.389 604.608L142.088 525.028L26.3736 436.142C-1.42628 414.787 -13.6189 378.785 -4.51557 344.933L33.3761 204.026L82.1545 66.5078C93.8733 33.4696 124.346 10.7485 159.354 8.94534L305.074 1.43983L450.935 5.33541Z" stroke="url(#paint0_linear_862_727)" stroke-width="2.87208"/>
+                    <defs>
+                    <linearGradient id="paint0_linear_862_727" x1="153.913" y1="134.948" x2="56.527" y2="42.2554" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#666666"/>
+                    <stop offset="1" stop-opacity="0"/>
+                    </linearGradient>
+                    </defs>
+                    </svg>
+                <h5 class="card-title fw-medium">Completely Digital Solution</h5>
+                <h6 class="card-subtitle  text-body-secondary fw-normal">Our platform removes dependency on cash,
+                  increasing tipping opportunities by providing a seamless digital experience, which aligns with the
+                  growing cashless trend.
+
+                </h6>
+              </div>
+              
+                <img src="./assets/images/elevates/digital-solution.png" alt="">
+       
+            </div>
+            <div class="card w-50 text-center tip-card" >
+              <div class="card-body">
+                <svg width="602" height="290" viewBox="0 0 602 290" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M510.451 7.24799C545.494 8.1839 576.519 30.1436 589.053 62.8816L662.886 255.743L721.436 453.782C731.375 487.399 720.077 523.692 692.814 545.728L532.207 675.546L361.954 792.427C333.054 812.267 295.047 812.738 265.664 793.619L92.5697 680.989L-71.2018 555.187C-99.0016 533.832 -111.194 497.83 -102.091 463.978L-48.4624 264.551L20.5743 69.9196C32.2931 36.8814 62.7655 14.1603 97.7741 12.3572L304.013 1.73451L510.451 7.24799Z" stroke="url(#paint0_linear_862_726)" stroke-width="2.87208"/>
+                  <defs>
+                  <linearGradient id="paint0_linear_862_726" x1="109.327" y1="281.961" x2="454.284" y2="-89.983" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#666666"/>
+                  <stop offset="1" stop-opacity="0"/>
+                  </linearGradient>
+                  </defs>
+                  </svg>
+                  <svg class="svg-secondstar" width="602" height="204" viewBox="0 0 602 204" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M450.935 5.33541C485.977 6.27132 517.003 28.2311 529.536 60.969L581.704 197.237L623.072 337.163C633.011 370.779 621.713 407.072 594.451 429.109L480.972 520.833L360.679 603.416C331.779 623.256 293.771 623.727 264.389 604.608L142.088 525.028L26.3736 436.142C-1.42628 414.787 -13.6189 378.785 -4.51557 344.933L33.3761 204.026L82.1545 66.5078C93.8733 33.4696 124.346 10.7485 159.354 8.94534L305.074 1.43983L450.935 5.33541Z" stroke="url(#paint0_linear_862_727)" stroke-width="2.87208"/>
+                    <defs>
+                    <linearGradient id="paint0_linear_862_727" x1="153.913" y1="134.948" x2="56.527" y2="42.2554" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#666666"/>
+                    <stop offset="1" stop-opacity="0"/>
+                    </linearGradient>
+                    </defs>
+                    </svg>
+                <h5 class="card-title fw-medium">Financial Profiling</h5>
+                <h6 class="card-subtitle  text-body-secondary fw-normal">By using digital payments, Requite helps
+                  build a financial profile for service professionals, potentially enhancing their eligibility for
+                  future
+                  financial products like loans.
+                </h6>
+              </div>
+      
+                <img src="./assets/images/elevates/finincial.png" alt="">
+              
+            </div>
+            <div class="card w-50 text-center tip-card" >
+
+              <div class="card-body mb-0">
+                <svg width="602" height="290" viewBox="0 0 602 290" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M510.451 7.24799C545.494 8.1839 576.519 30.1436 589.053 62.8816L662.886 255.743L721.436 453.782C731.375 487.399 720.077 523.692 692.814 545.728L532.207 675.546L361.954 792.427C333.054 812.267 295.047 812.738 265.664 793.619L92.5697 680.989L-71.2018 555.187C-99.0016 533.832 -111.194 497.83 -102.091 463.978L-48.4624 264.551L20.5743 69.9196C32.2931 36.8814 62.7655 14.1603 97.7741 12.3572L304.013 1.73451L510.451 7.24799Z" stroke="url(#paint0_linear_862_726)" stroke-width="2.87208"/>
+                  <defs>
+                  <linearGradient id="paint0_linear_862_726" x1="109.327" y1="281.961" x2="454.284" y2="-89.983" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#666666"/>
+                  <stop offset="1" stop-opacity="0"/>
+                  </linearGradient>
+                  </defs>
+                  </svg>
+                  <svg class="svg-secondstar" width="602" height="204" viewBox="0 0 602 204" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M450.935 5.33541C485.977 6.27132 517.003 28.2311 529.536 60.969L581.704 197.237L623.072 337.163C633.011 370.779 621.713 407.072 594.451 429.109L480.972 520.833L360.679 603.416C331.779 623.256 293.771 623.727 264.389 604.608L142.088 525.028L26.3736 436.142C-1.42628 414.787 -13.6189 378.785 -4.51557 344.933L33.3761 204.026L82.1545 66.5078C93.8733 33.4696 124.346 10.7485 159.354 8.94534L305.074 1.43983L450.935 5.33541Z" stroke="url(#paint0_linear_862_727)" stroke-width="2.87208"/>
+                    <defs>
+                    <linearGradient id="paint0_linear_862_727" x1="153.913" y1="134.948" x2="56.527" y2="42.2554" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#666666"/>
+                    <stop offset="1" stop-opacity="0"/>
+                    </linearGradient>
+                    </defs>
+                    </svg>
+                <h5 class="card-title fw-medium">Support for Solo and Group Tipping</h5>
+                <h6 class="card-subtitle  text-body-secondary fw-normal">Whether working individually or in teams,
+                  Requite’s platform supports both solo and pooled tipping, making it flexible for any working
+                  arrangement
+                </h6>
+            
+              </div>
+              <img src="./assets/images/elevates/support.png" alt="">
+
+            </div>
+            <div class="card w-50 text-center tip-card" >
+
+              <div class="card-body mb-0">
+                <svg width="602" height="290" viewBox="0 0 602 290" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M510.451 7.24799C545.494 8.1839 576.519 30.1436 589.053 62.8816L662.886 255.743L721.436 453.782C731.375 487.399 720.077 523.692 692.814 545.728L532.207 675.546L361.954 792.427C333.054 812.267 295.047 812.738 265.664 793.619L92.5697 680.989L-71.2018 555.187C-99.0016 533.832 -111.194 497.83 -102.091 463.978L-48.4624 264.551L20.5743 69.9196C32.2931 36.8814 62.7655 14.1603 97.7741 12.3572L304.013 1.73451L510.451 7.24799Z" stroke="url(#paint0_linear_862_726)" stroke-width="2.87208"/>
+                  <defs>
+                  <linearGradient id="paint0_linear_862_726" x1="109.327" y1="281.961" x2="454.284" y2="-89.983" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#666666"/>
+                  <stop offset="1" stop-opacity="0"/>
+                  </linearGradient>
+                  </defs>
+                  </svg>
+                  <svg class="svg-secondstar" width="602" height="204" viewBox="0 0 602 204" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M450.935 5.33541C485.977 6.27132 517.003 28.2311 529.536 60.969L581.704 197.237L623.072 337.163C633.011 370.779 621.713 407.072 594.451 429.109L480.972 520.833L360.679 603.416C331.779 623.256 293.771 623.727 264.389 604.608L142.088 525.028L26.3736 436.142C-1.42628 414.787 -13.6189 378.785 -4.51557 344.933L33.3761 204.026L82.1545 66.5078C93.8733 33.4696 124.346 10.7485 159.354 8.94534L305.074 1.43983L450.935 5.33541Z" stroke="url(#paint0_linear_862_727)" stroke-width="2.87208"/>
+                    <defs>
+                    <linearGradient id="paint0_linear_862_727" x1="153.913" y1="134.948" x2="56.527" y2="42.2554" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#666666"/>
+                    <stop offset="1" stop-opacity="0"/>
+                    </linearGradient>
+                    </defs>
+                    </svg>
+                <h5 class="card-title fw-medium">Enhanced Data Insights</h5>
+                <h6 class="card-subtitle  text-body-secondary fw-normal">Requite’s platform provides analytics and
+                  recommendations to optimize tipping amounts and improve earnings
+                </h6>
+            
+              </div>
+              <img src="./assets/images/elevates/data-insights.png" alt="">
+
+            </div>
+          
+        </div>
+      </div>
+  
+      
+    </div>
+  </section>
+
+
+  <!-- A Better Future with Requite --------------------------------- -->
+  <section class="better-future text-center">
+    <div class="container">
+      <span class="better-que fw-medium">How the New World Looks with Requite</span>
+      <h2 class="better-future-title fw-semibold secondary-font">A Better Future  with Requite</h2>
+      <p class="better-slogan fw-normal">Boosted Tips, Satisfied Customers, Thriving Businesses.</p>
+
+      <div class="better-future-cards ">
+        <div class="better-title-card text-start d-flex fw-medium justify-content-between">
+
+          <div class="better-title better-future-firstcard">
+
+            <h3>Higher Earnings  for Workers </h3>
+            <p class="better-title-text fw-semibold">95% of guests would tip more if digital tipping were available.</p>
+          </div>
+          <div class="better-title better-future-secondcard">
+            <h3>Simplified Tipping  for Customerss</h3>
+            <p class="better-title-text fw-semibold">95% of guests would tip more if digital tipping were available.</p>
+          </div>
+          <div class="better-title better-future-thirdcard">
+            <h3>Better Business  Outcomes</h3>
+            <p class="better-title-text fw-semibold">Requite boosts earnings by 35% and cuts turnover costs.</p>
+          </div>
+        </div>
+        <!-- <div class="better-discription-card w-100 d-flex fw-medium text-start">
+        
+          
+      <div class="better-card better-future-fourthcard">
+       
+        <h6>Requite increases tip frequency by 95% and tip value by 60%, boosting service professionals' income.</h6>
+      </div>
+      <div class="better-card better-future-fifthcard">
+        <h6>95% of guests would tip more if digital tipping were available.</h6>
+      </div>
+      <div class="better-card better-future-sixthcard">
+        <h6>Requite boosts earnings by 35% and cuts turnover costs.</h6>
+      </div>
+    </div> -->
+      </div>
+
+      <div class="better-future-bottom d-flex justify-content-between align-items-center">
+        <h3 class="better-bottom-title fw-semibold secondary-font">A seamless solution for the  modern cashless
+          world.</h3>
+        <div class="better-action-button d-flex">
+          <button class="start">Get Started</button>
+          <button class="learn-more">Learn More</button>
+        </div>
+      </div>
+      <div class="better-bottom-note fw-medium text-start">Enhance customer satisfaction and boost earnings with
+        Requite’s easy-to-use digital tipping platform.</div>
+    </div>
+  </section>
+
+  <!-- faq section  -->
+  <section id="solution" class="faq section-padding">
+    <div class="container">
+      <span class="faq-subtitle secondary-font fw-semibold">FAQs</span>
+      <h2 class="faq-title">Questions → Answers</h2>
+      <div class="faq-according">
+        <div class="accordion">
+          <div class="accordion-item">
+            <h2 id="accordion-button-1" aria-expanded="false"><span class="accordion-title">How does Requite ensure fair
+                tipping for service professionals?</span><span class="icon" aria-hidden="true"></span></h2>
+            <div class="accordion-content">
+              <p>It is a long established fact that a reader will be distracted by the readable content of a page when
+                looking at its layout. </p>
+              <p>It is a long established fact that a reader will be distracted by the readable content of a page when
+                looking at its layout. </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 id="accordion-button-1" aria-expanded="false"><span class="accordion-title">Can Requite work with both
+                solo and group tipping arrangements?</span><span class="icon" aria-hidden="true"></span></h2>
+            <div class="accordion-content">
+              <p>It is a long established fact that a reader will be distracted by the readable content of a page when
+                looking at its layout. </p>
+              <p>It is a long established fact that a reader will be distracted by the readable content of a page when
+                looking at its layout. </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 id="accordion-button-1" aria-expanded="false"><span class="accordion-title">What are the benefits of
+                using digital tipping over traditional cash tips?</span><span class="icon" aria-hidden="true"></span>
+            </h2>
+            <div class="accordion-content">
+              <p>It is a long established fact that a reader will be distracted by the readable content of a page when
+                looking at its layout. </p>
+              <p>It is a long established fact that a reader will be distracted by the readable content of a page when
+                looking at its layout. </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 id="accordion-button-1" aria-expanded="false"><span class="accordion-title">How does Requite address the
+                issue of customers not completing tips via mobile apps?</span><span class="icon"
+                aria-hidden="true"></span></h2>
+            <div class="accordion-content">
+              <p>It is a long established fact that a reader will be distracted by the readable content of a page when
+                looking at its layout. </p>
+              <p>It is a long established fact that a reader will be distracted by the readable content of a page when
+                looking at its layout. </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 id="accordion-button-1" aria-expanded="false"><span class="accordion-title">What are the security
+                measures for processing digital tips through Requite?</span><span class="icon"
+                aria-hidden="true"></span></h2>
+            <div class="accordion-content">
+              <p>It is a long established fact that a reader will be distracted by the readable content of a page when
+                looking at its layout. </p>
+              <p>It is a long established fact that a reader will be distracted by the readable content of a page when
+                looking at its layout. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- footer --------------------------------------------------- -->
+
+  <footer id="contact">
+    <div class="container">
+      <div class="footer-wrapper w-100 d-flex justify-content-between">
+        <div class="footer-left">
+
+          <a href="#hero"> <img src="./assets/images/logo/headerLogo.png" alt="logo" class="footer-logo"></a>
+          <p class="footer-condition rear-font fw-normal">Be sure to take a look at our <span class="terms"><a
+                href="">Terms of Use</a></span> and <span class="privacy"><a href="">Privacy Policy</a></span></p>
+        </div>
+        <div class="foooter-right">
+          <h6 class="footer-right-title fw-medium">Subscribe our Newsletters</h6>
+          <div class="subscribe-form d-flex">
+            <input type="text" placeholder="Your Email">
+            <button class="subscribe">Subscribe</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- rights  -->
+  <section class="rights">
+    <div class="container">
+      <p class="right-detail mb-0 text-center rear-font fw-normal">
+        All transactions processed through Requite are secure and compliant with industry standards. Tips are subject to
+        the policies of individual establishments. Requite is not responsible for discrepancies in tip distribution or
+        service charges imposed by employers.
+      </p>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+<script src="./assets/javascript/script.js"></script>
+</body>
+
+</html>
+
+
+  <!-- requit swiper ------------------------ -->
+  <!-- <section class="requit-swiper">
+    <div class="animated-title fw-normal">
+      <h3>We're transforming a centuries-old tipping practice into a seamless digital experience.</h3>
+    </div>
+    <div class="w-100">
+      <div class="requit-swiper-wrapper d-flex">
+        <div class="w-30">
+          <div class="swiper-left">
+            <div class="swiper-title fw-normal">
+              <h3>Emily</h3>
+              <p class="swiper-data">Barista, Morning Brew Café Seattle, WA</p>
+            </div>
+            <div class="swiper-title">
+              <h3>Emily</h3>
+              <p class="swiper-data">Barista, Morning Brew Café Seattle, WA</p>
+            </div>
+            <div class="swiper-title">
+              <h3>Emily</h3>
+              <p class="swiper-data">Barista, Morning Brew Café Seattle, WA</p>
+            </div>
+          </div>
+        </div>
+        <div class="w-60">
+          <div class="swiper-right">
+            <div id="carouselExample" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active d-flex">
+                  <div class="img-data d-flex w-100">
+                    <img src="./assets/images/SWIPER/emily.png" alt="">
+                    <div class="swiper-card fw-normal">
+                      <p class="swiper-note">Declining Cash Tips</p>
+                      <p class="emily-detail">Over 70% of transactions are now cashless, leading to a significant
+                        decrease in cash tips for service professionals.
+                      </p>
+                      <button class="swiper-read-more">Read More</button>
+                    </div>
+                    <div class="swiper-transaction-tip">
+                      <div class="swiperthirdcard swiper-transaction">
+                        <p>Digital transactions processed</p>
+                        <span class="number">375</span>
+                      </div>
+                      <div class="swiperthirdcard swiper-tip">
+                        <p>Tip completion rate improvement</p>
+                        <span class="number">83%</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item d-flex">
+                  <div class="img-data  w-100 d-flex">
+                    <img src="./assets/images/SWIPER/emily.png" alt="">
+                    <div class="swiper-card fw-normal">
+                      <p class="swiper-note">Declining Cash Tips</p>
+                      <p class="emily-detail">Over 70% of transactions are now cashless, leading to a significant
+                        decrease in cash tips for service professionals.
+                      </p>
+                      <button class="swiper-read-more">Read More</button>
+                    </div>
+                    <div class="swiper-transaction-tip">
+                      <div class="swiperthirdcard swiper-transaction">
+                        <p>Digital transactions processed</p>
+                        <span class="number">375</span>
+                      </div>
+                      <div class="swiperthirdcard swiper-tip">
+                        <p>Tip completion rate improvement</p>
+                        <span class="number">83%</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item  d-flex">
+                  <div class="img-data  w-100 d-flex">
+                    <img src="./assets/images/SWIPER/emily.png" alt="">
+                    <div class="swiper-card fw-normal">
+                      <p class="swiper-note">Declining Cash Tips</p>
+                      <p class="emily-detail">Over 70% of transactions are now cashless, leading to a significant
+                        decrease in cash tips for service professionals.
+                      </p>
+                      <button class="swiper-read-more">Read More</button>
+                    </div>
+                    <div class="swiper-transaction-tip">
+                      <div class="swiperthirdcard swiper-transaction">
+                        <p>Digital transactions processed</p>
+                        <span class="number">375</span>
+                      </div>
+                      <div class="swiperthirdcard swiper-tip">
+                        <p>Tip completion rate improvement</p>
+                        <span class="number">83%</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
